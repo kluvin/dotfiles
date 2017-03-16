@@ -1,0 +1,21 @@
+
+alias logout='pkill -U $USER'
+
+# Enable colors
+set -x LESS_TERMCAP_md (printf "\e[01;31m")
+set -x LESS_TERMCAP_me (printf "\e[0m")
+set -x LESS_TERMCAP_se (printf "\e[0m")
+set -x LESS_TERMCAP_so (printf "\e[01;44;33m")
+set -x LESS_TERMCAP_ue (printf "\e[0m")
+set -x LESS_TERMCAP_us (printf "\e[01;32m")
+
+alias howdoi='howdoi -c'
+alias diff='env diff --color=always'
+alias grep='env grep --color=always'
+alias config='/usr/bin/git --git-dir=$HOME/.files/ --work-tree=$HOME'
+
+# startup sequence
+echo
+screenfetch
+echo
+echo
