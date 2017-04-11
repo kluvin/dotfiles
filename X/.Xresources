@@ -9,6 +9,7 @@ rofi.color-urgent: #002b37, #da4281, #002b37, #003642, #da4281
 
 rofi.padding: 300
 
+rofi.monitor: primary
 rofi.fullscreen: true
 rofi.terminal: termite
 rofi.modi: window, run, drun

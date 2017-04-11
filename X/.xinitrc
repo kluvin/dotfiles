@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
@@ -30,10 +30,6 @@ fi
 # Settings & Startup #
 ######################
 
-# temeorary workaround for bug with cava and cli-vis
-# doesn't respond if audio is not already present
-#tilda -c cava -t 100 &
-
 # BEGIN desktop
 # Fix for dual monitor setup
 xrandr --output DVI-D-0 --primary
@@ -43,14 +39,10 @@ xrandr --output HDMI-0 --right-of DVI-D-0
 redshift &
 compton &
 rofi &
-conky -c ~/.config/conky/config &
-polybar top -c ~/.config/polybar/space &
-sh ~/.fehbg
-sxhkd &
 
 
 # Here is the default session
-session=${1:-bspwm}
+# session=${1:-xmonad}
 
 case $session in
     awesome           ) exec awesome;;

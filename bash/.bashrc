@@ -43,7 +43,7 @@ alias 'ls'='ls --color=always'
 alias 'diff'='diff --color=always'
 alias 'grep'='grep --color=always'
 alias 'logout'='pkill -U $USER'
-echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
+alias 'config'='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # 'less'
 export LESSOPEN='| /usr/bin/source-highlight-esc.sh %s'
@@ -56,7 +56,7 @@ export dev='/media/etc/dev'
 
 export EDITOR='/usr/bin/vim'
 
-# fish is default
+# Drop into
 fish
 
 # Start sequence
@@ -64,25 +64,3 @@ echo
 screenfetch
 echo
 echo
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
-alias config='/usr/bin/git --git-dir=/home/kluvin/.cfg/ --work-tree=/home/kluvin'
