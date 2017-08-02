@@ -44,9 +44,10 @@ do
     subdir=$(echo ${subdir} | sed 's/\//''/')
     for target in $(ls -A ${subdir})
     do
-    #                           FILE / DIRECTORY TO LINK   WHERE TO PUT LINK
-        ln -sbv --suffix '-old' $(pwd)/${subdir}/${target} ${target_dests[${subdir}]}/${target}
+        echo $(pwd)/${subdir}/${target} ${target_dests[${subdir}]}/${target}
+        ln -sfv -T $(pwd)/${subdir}/${target} ${target_dests[${subdir}]}/${target}
         echo ${target_dests[${subdir}]}/${target} >> state.db
+        echo
     done
 done
 

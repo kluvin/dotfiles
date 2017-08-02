@@ -3,16 +3,13 @@ install.sh
 
 **To install, simply run `bash install.sh`**
 
-`install.sh` symlinks the provided dotfiles in their default directories, and backups your old ones suffixed by '-old'. The link paths are appended to a file `state.db` which can be used to revert back to the original state by simply deleting the symlinks and moving back your old files. Something like this should suffice:
+`install.sh` symlinks the provided dotfiles in their default directories. The link paths are appended to a file `state.db` which can be used to revert back to the original state by simply deleting the symlinks. Something like this should suffice:
 
 ```
 # Untested, might crash and set your computer afire.
 for line in $(cat state.db)
 do
     rm -rf $line
-    if [ ${line}-old ]; then
-        mv ${line}-old $line
-    fi
 done
 rm -f state.db
 ```
